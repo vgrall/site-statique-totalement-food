@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,17 +12,20 @@ body {
 
 .banniere {
   position: absolute; 
+  height: 100vh; /* la hauteur de l'écran */
   z-index: -1; 
   inset: 0px; 
   /* overflow: hidden;  */
   background-size: cover; 
   background-color: transparent; 
   background-repeat: no-repeat; 
-  background-position: 50% 50%; 
+  background-position: center; 
 }
 
 /* titre et sous-titre au milieu de la banniere photo */
 .content {
+  top: 50%; /* positionnement vertical au centre */
+  left: 50%; /* positionnement horizontal au centre */
   text-align: center;
   color: #FBE4CC;
   font-family: 'Righteous', cursive;
@@ -30,18 +34,21 @@ body {
 /* section recetts avec photo en colonne */
 .chapter img{
   width: 425px;
+  max-width: 100%; /* image de taille maximale pour la largeur disponible */
+  height: auto; /* hauteur automatique pour conserver les proportions de l'image */
   vertical-align: middle;
 }
 
 .chapters  div{
-  padding: 5rem 0;
+  padding: 3rem 0; /* espacement de tous les côtés */
+  flex-wrap: wrap; /* permet de passer à plusieurs lignes si l'espace est insuffisant */
+  justify-content: space-around; /* centre les éléments et répartit l'espace disponible */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+ 
 }
 
-.chapters {
-  padding-right: 80px;
+ .chapters {
+  padding-right: 30px;
 }
 
 figure {
@@ -60,6 +67,30 @@ figure {
   top: 85%;
   left: 35%;
   transform: translate(-50%, -50%);
+  padding: 0.3rem;
+  
+}
+
+small {
+  font-size: smaller;
+  color: #FBE4CC;
+  
+}
+
+.footer_copyright{
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 
+
+/* règles pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+  .chapter {
+    max-width: 100%; /* occupe toute la largeur disponible */
+  }
+  .chapter img {
+    width: 100%; /* image de largeur maximale pour la largeur disponible */
+    height: auto; /* hauteur automatique pour conserver les proportions de l'image */
+  }
+}
