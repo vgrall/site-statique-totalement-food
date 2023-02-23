@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #1f2039;
+  Ò
+}
+
+.banniere {
+  position: absolute; 
+  z-index: -1; 
+  inset: 0px; 
+  /* overflow: hidden;  */
+  background-size: cover; 
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  background-position: 50% 50%; 
+}
+
+/* titre et sous-titre au milieu de la banniere photo */
+.content {
+  text-align: center;
+  color: #FBE4CC;
+  font-family: 'Righteous', cursive;
+}
+
+/* section recetts avec photo en colonne */
+.chapter img{
+  width: 425px;
+  vertical-align: middle;
+}
+
+.chapters  div{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.chapters {
+  padding-right: 80px;
+}
+
+figure {
+  position: relative;
+  margin-left: 40px;
+}
+
+.chapter-titre {
+  font-family: 'Righteous', cursive;
+  font-size: 30px ;
+  text-align: center;
+  position: absolute;  Définir la position absolue pour positionner le titre par-dessus l'image
+  z-index: 1; /*Définir une valeur de z-index supérieure pour que le titre apparaisse par-dessus l'image */
+  color:#FBE4CC;
+  background: #1f2039;
+  top: 85%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+
