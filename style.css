@@ -6,8 +6,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 1em;
-  background-color: #1f2039;
-  Ò
+  background-color: #221e1f;
 }
 
 .banniere {
@@ -56,6 +55,16 @@ figure {
   margin-left: 40px;
 }
 
+figure:hover{
+  transform: scale(1.2);
+}
+
+img {
+  border-radius: 10px;
+  
+
+}
+
 .chapter-titre {
   font-family: 'Righteous', cursive;
   font-size: 30px ;
@@ -63,7 +72,7 @@ figure {
   position: absolute;  Définir la position absolue pour positionner le titre par-dessus l'image
   z-index: 1; /*Définir une valeur de z-index supérieure pour que le titre apparaisse par-dessus l'image */
   color:#FBE4CC;
-  background: #1f2039;
+  background: #221e1f;
   top: 85%;
   left: 35%;
   transform: translate(-50%, -50%);
