@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+  
+  }
+  
+  body {
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    color: #221e1f; 
+
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 33%; 
+    border: 3px solid black;
+ 
+    
+  }
+  
+
+  .titre-recette {
+    background: rgb(221,221,221); 
+    text-align: center;
+   
+  }
+
+
+
+  .titre-etiquette {
+    font-weight: 800;
+    text-align: center;
+    padding: 3px;
+  
+  }
+
+
+.separateur {
+
+border-bottom: 10px solid black; 
+
+    
+}
+
+
+.titre-total, .titre-valeur, .serving{
+    text-align: justify;
+    padding-left : 20%;
+    padding-bottom: 5px;
+
+}
+
+.macro {
+    text-align: justify;
+    padding-left : 20%;
+    padding-top: 3px;
+}
+
+.valeur-macro {
+    text-align: justify;
+    padding-left: 20%;
+    padding-top: 3px;
+}
