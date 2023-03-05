@@ -64,24 +64,12 @@
     margin-left: 33%;
   }
 
-table{
+.tableau-ingredient-nutrition {
     border-collapse: collapse;
     line-height: 15px;
+    width: 50%; 
     
-
 }
-
-  .interligne {
-    
-    border-bottom: 2px solid #FBE4CC;
-  
-    
-  }
-
-  iframe {
-    border: none;
-    padding-left: 16%;
-  }
 
   td, th{
     padding: 10px;
@@ -101,3 +89,62 @@ table{
     
   }
 
+  /* INSERTION DE L'ETIQUETTE NUTRIONNELLE */
+
+  
+  
+
+  .titre-recette {
+    background: #FBE4CC; 
+    text-align: center;
+    color: #221e1f;
+   
+  }
+
+
+
+  .titre-etiquette {
+    font-weight: 800;
+    text-align: center;
+    padding: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FBE4CC; 
+  
+  }
+
+
+.separateur {
+
+border-bottom: 10px solid #FBE4CC;
+border-collapse: collapse;
+width: 30%;
+
+}
+
+.no-separateur {
+    border-bottom: none;
+}
+
+
+.titre-total, .titre-valeur, .serving{
+    text-align: justify;
+    padding-left : 10%;
+    padding-bottom: 0px;
+    color: #FBE4CC; 
+
+}
+
+.macro {
+    text-align: justify;
+    padding-left : 10%;
+    padding-top: 7px;
+    color: #FBE4CC; 
+}
+
+.valeur-macro {
+    text-align: justify;
+    padding-left: 10%;
+    padding-top: 7px;
+    color: #FBE4CC; 
+}
