@@ -42,7 +42,7 @@
     border-radius: 50px;
     padding: 15px;
     float: left;
-  margin-right: 20px;
+    margin-right: 20px;
   
   }
 
@@ -76,6 +76,11 @@ table{
     border-bottom: 2px solid #FBE4CC;
   
     
+  }
+
+  iframe {
+    border: none;
+    padding-left: 16%;
   }
 
   td, th{

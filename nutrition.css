@@ -6,22 +6,23 @@
   body {
     font-family: 'Righteous', cursive;
     font-size: 1em;
-    color: #221e1f; 
+    
 
   }
 
   table {
     border-collapse: collapse;
     width: 33%; 
-    border: 3px solid black;
+ 
  
     
   }
   
 
   .titre-recette {
-    background: rgb(221,221,221); 
+    background: #FBE4CC; 
     text-align: center;
+   
    
   }
 
@@ -31,13 +32,14 @@
     font-weight: 800;
     text-align: center;
     padding: 3px;
+    color: #FBE4CC; 
   
   }
 
 
 .separateur {
 
-border-bottom: 10px solid black; 
+border-bottom: 10px solid #FBE4CC);
 
     
 }
@@ -45,19 +47,22 @@ border-bottom: 10px solid black;
 
 .titre-total, .titre-valeur, .serving{
     text-align: justify;
-    padding-left : 20%;
-    padding-bottom: 5px;
+    padding-left : 10%;
+    padding-bottom: 12px;
+    color: #FBE4CC; 
 
 }
 
 .macro {
     text-align: justify;
-    padding-left : 20%;
+    padding-left : 10%;
     padding-top: 3px;
+    color: #FBE4CC; 
 }
 
 .valeur-macro {
     text-align: justify;
-    padding-left: 20%;
+    padding-left: 10%;
     padding-top: 3px;
+    color: #FBE4CC; 
 }
