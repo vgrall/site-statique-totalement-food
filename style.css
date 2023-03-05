@@ -95,7 +95,7 @@ small {
 
 /* règles pour les écrans plus petits */
 @media screen and (max-width: 768px) {
-  .chapter {
+  .chapter, .footer_copyright {
     max-width: 100%; /* occupe toute la largeur disponible */
   }
   .chapter img {

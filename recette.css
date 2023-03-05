@@ -48,26 +48,25 @@
 
 
 
-  .ingredients {
-    
-    width: 100%;
+
+  .procedure {
+   
     text-align: justify;
-    margin-left: 33%;
+    max-width: 500px; 
+    margin: 0 auto;
    
   }
 
-
-  .procedure {
-    
-    width: 100%;
-    text-align: justify;
-    margin-left: 33%;
-  }
-
-.tableau-ingredient-nutrition {
+.ingredient {
     border-collapse: collapse;
     line-height: 15px;
-    width: 50%; 
+   
+    
+}
+
+.nutrition {
+    border-collapse: collapse;
+    line-height: 15px;
     
 }
 
@@ -89,6 +88,8 @@
     
   }
 
+
+
   /* INSERTION DE L'ETIQUETTE NUTRIONNELLE */
 
   
@@ -101,12 +102,9 @@
    
   }
 
-
-
   .titre-etiquette {
     font-weight: 800;
     text-align: center;
-    padding: 3px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: #FBE4CC; 
@@ -122,29 +120,54 @@ width: 30%;
 
 }
 
-.no-separateur {
-    border-bottom: none;
-}
-
-
-.titre-total, .titre-valeur, .serving{
+.titre-total, .titre-valeur, .serving,.macronutrition, .valeur-macro {
     text-align: justify;
-    padding-left : 10%;
+    padding-left : 8%;
     padding-bottom: 0px;
     color: #FBE4CC; 
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
 
 }
 
-.macro {
+.macros {
     text-align: justify;
     padding-left : 10%;
     padding-top: 7px;
     color: #FBE4CC; 
+    display: inline-block;
+    width: 40%;
+    height: 45vh;
+  
+ 
 }
 
-.valeur-macro {
+.ingredients { 
+    display: inline-block;
     text-align: justify;
-    padding-left: 10%;
-    padding-top: 7px;
-    color: #FBE4CC; 
+   
+    height: 45vh;
+    
+  
 }
+
+.footer_copyright{
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+
+
+/* règles pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    .container, .procedure, .footer_copyright, .banniere {
+      max-width: 100%; /* occupe toute la largeur disponible */
+      height: auto;
+    }
+   
+  }
