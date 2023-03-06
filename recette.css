@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
+   body {
     font-family: 'Righteous', cursive;
     font-size: 1em;
     background-color: #221e1f;
@@ -16,7 +11,7 @@
     height: 5px;
     display: inline;
     z-index: -1; 
-    inset: 0px; 
+    inset: 0px;
     background-size: cover; 
     background-color: transparent; 
     background-repeat: no-repeat; 
@@ -28,6 +23,7 @@
     text-align: center;
     font-family: 'Righteous', cursive;
     margin-top: 20px;
+   
   }
 
   h3 {
@@ -35,40 +31,12 @@
     margin-bottom: 7px;
   }
 
-  .photo-recette {
-    width: 55%;
-    height: auto;
-    display: block;
-    border-radius: 50px;
-    padding: 15px;
-    float: left;
-    margin-right: 20px;
-  
-  }
-
-
-
-
-  .procedure {
-   
-    text-align: justify;
-    max-width: 500px; 
-    margin: 0 auto;
-   
-  }
-
-.ingredient {
-    border-collapse: collapse;
-    line-height: 15px;
-   
-    
-}
-
 .nutrition {
-    border-collapse: collapse;
+    border-collapse: collapse; /* Permet d'obtenir un séparateur sans coupure entre les deux colonnes */
     line-height: 15px;
-    
+
 }
+
 
   td, th{
     padding: 10px;
@@ -83,18 +51,10 @@
     
   }
 
-  .mise-en-oeuvre {
-    float: right;
-    
-  }
-
-
 
   /* INSERTION DE L'ETIQUETTE NUTRIONNELLE */
 
   
-  
-
   .titre-recette {
     background: #FBE4CC; 
     text-align: center;
@@ -115,46 +75,42 @@
 .separateur {
 
 border-bottom: 10px solid #FBE4CC;
-border-collapse: collapse;
 width: 30%;
 
 }
 
-.titre-total, .titre-valeur, .serving,.macronutrition, .valeur-macro {
+ .titre-total, .titre-valeur, .serving,.macronutrition, .valeur-macro {  /*Mise en forme des 3 div pour élargir l'espace entre elles*/
     text-align: justify;
     padding-left : 8%;
     padding-bottom: 0px;
-    color: #FBE4CC; 
+   
 }
 
 
 .container{
-    margin: 0 auto;
-    max-width: 960px;
-    text-align: center;
-
-}
-
-.macros {
-    text-align: justify;
-    padding-left : 10%;
-    padding-top: 7px;
-    color: #FBE4CC; 
-    display: inline-block;
-    width: 40%;
-    height: 45vh;
-  
- 
-}
-
-.ingredients { 
-    display: inline-block;
-    text-align: justify;
    
-    height: 45vh;
-    
-  
+    display: flex;
+
 }
+
+
+.ingredients, .macros, .procedure {
+    padding: 0 2% 0 ;
+}
+
+/* FAIRE EN SORTE QUE LA PROCEDURE SE POSITIONNE ALIGNEE SUR LA DIV INGREDIENTS */
+
+ .container-page {  /*Encadre la div ingredients, macros et procedure*/
+    display: flex;
+    flex: wrap;
+    align-items: baseline; /* Aligner les éléments verticalement */
+    justify-content: center; /* aligner les éléments horizontalement en les centrant sur la page */
+    height: 100%; /* Définir la hauteur du conteneur */
+    
+    
+  }
+
+
 
 .footer_copyright{
     text-align: center;
@@ -164,10 +120,11 @@ width: 30%;
 
 
 /* règles pour les écrans plus petits */
-@media screen and (max-width: 768px) {
-    .container, .procedure, .footer_copyright, .banniere {
-      max-width: 100%; /* occupe toute la largeur disponible */
-      height: auto;
+
+
+  @media only screen and (max-width: 781px) {
+    .container, .procedure, .footer_copyright, .banniere, h1{
+      flex-direction: column;
     }
-   
+    
   }
