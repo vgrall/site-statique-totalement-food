@@ -7,9 +7,8 @@
 
   .banniere {
     position: relative; 
-    width: 5%;
     height: 5px;
-    display: inline;
+    display:contents;   /* permet de garder l'image entière en responsive*/
     z-index: -1; 
     inset: 0px;
     background-size: cover; 
@@ -87,7 +86,7 @@ width: 30%;
 }
 
 
-.container{
+.container_etiquette{
    
     display: flex;
 
@@ -119,12 +118,13 @@ width: 30%;
 
 
 
-/* règles pour les écrans plus petits */
+/* règles pour les ecrans plus petits -comportement en dessous de 720px */
 
-
-  @media only screen and (max-width: 781px) {
-    .container, .procedure, .footer_copyright, .banniere, h1{
-      flex-direction: column;
+@media only screen and (max-width: 720px) {
+    body, header, .footer_copyright, .container-page{
+     
+      max-width: 100%;
+     
     }
-    
   }
+

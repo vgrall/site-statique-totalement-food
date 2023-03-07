@@ -93,8 +93,8 @@ small {
 
 
 
-/* règles pour les écrans plus petits */
-@media screen and (max-width: 768px) {
+/* règles pour les écrans plus petits -comportement en dessous de 720px */
+@media screen and (max-width: 720px) {
   .chapter, .footer_copyright {
     max-width: 100%; /* occupe toute la largeur disponible */
   }
