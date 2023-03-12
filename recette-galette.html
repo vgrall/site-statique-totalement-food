@@ -3,10 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <!-- indique qu'il faut prendre en compte la largeur de l'écran-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Londrina+Solid:wght@300&family=Righteous&display=swap"
         rel="stylesheet">
@@ -14,22 +20,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./recette.css">
     <title>fiche recette</title>
+
+
+
+
 </head>
 
 <body>
+
+
     <header>
         <nav>
-            <a href="index.html#ancre-logo" class="logo"><img src="images/logo.png" alt="logo Totalement Food"></a>
+            <figure>
+                <a href="index.html#ancre-logo" class="logo"><img src="images/logo.png" alt="logo Totalement Food"></a>
+            </figure>
 
-            <div class="banniere">
-                <img src="images/galette.jpeg" alt="banniere TF">
-            </div>
+
 
         </nav>
 
         <main>
 
-
+            <div class="banniere" id="banniere">
+                <img src="images/galette.jpeg" alt="banniere TF" id="photoGalette">
+            </div>
 
             <h1 id="ancre-recette">LES GALETTES BRETONNES</h1><br><br>
 
@@ -155,10 +169,18 @@
 
         </main>
 
+
+        <script src="./recette.js">
+
+        </script>
+
 </body>
+
 
 <footer class="footer_copyright">
     <small class="copyright_content">© 2023, Totalement Food - Site web par Virginie Grall</small>
 </footer>
+
+
 
 </html>
